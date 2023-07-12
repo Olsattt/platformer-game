@@ -1,0 +1,110 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    body
+    {
+        margin: 0;
+        padding: 0 ;
+    }
+    canvas
+    {
+        border: 2px solid black;
+        /* margin: 0 20%; */
+        background: url("Night/1.png") no-repeat;
+        background-size: cover;
+    }
+    .block
+    {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    #pop-up-win
+    {
+        width: 1000px;
+        margin: 0 auto;
+        background-color: rgba(0, 0, 0, 0.8);
+        min-height: 600px;
+        position: absolute;
+        z-index: 10;
+        font-family: 'Press Start 2P', cursive;
+        display: none;
+    }
+    #pop-up-lose
+    {
+        width: 1000px;
+        margin: 0 auto;
+        background-color: rgba(0, 0, 0, 0.8);
+        min-height: 600px;
+        position: absolute;
+        z-index: 10;
+        font-family: 'Press Start 2P', cursive;
+        display: none;
+    }
+    .pop-up-text
+    {
+        margin-top: 100px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        font-size: 32px;
+    }
+    .pop-up-btn
+    {
+       width: 250px;
+       margin: 0 auto;
+    }
+    #restart
+    {
+        margin: 0 auto;
+        border-radius: 1px;
+        background-color: #fff;
+        color: black;
+        width: 250px;
+        height: 50px;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 28px;
+        text-transform: uppercase;
+    }
+    #win-restart
+    {
+        margin: 0 auto;
+        border-radius: 1px;
+        background-color: #fff;
+        color: black;
+        width: 250px;
+        height: 50px;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 28px;
+        text-transform: uppercase;
+    }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="block">
+        <div id="pop-up-lose">
+            <!-- <div class="pop-up-text">
+                <p>you lose</p>
+            </div> -->
+            <!-- <div class="pop-up-btn">
+                <button id="restart">restart</button>
+            </div> -->
+        </div>
+        <div id="pop-up-win">
+            <!-- <div class="pop-up-text">
+                <p>you win</p>
+            </div>
+            <div class="pop-up-btn">
+                <button id="restart">restart</button>
+            </div> -->
+        </div>
+        <canvas></canvas>
+    </div>
+    <script src="screept.js"></script>
+</body>
+</html>
